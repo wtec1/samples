@@ -1,0 +1,411 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium E-learning Centre - Online Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/img/WTEC1_LMS_512x512.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+   <!-- Header -->
+    <header class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 flex justify-between text-white py-6 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">Time for test: Take Exams</h1>
+            <p class="text-blue-100">Assessing your learning</p>
+        </div>
+    </header>
+
+      <!-- mobile / desktop sidebar -->
+<aside class="fixed right-0 w-48 bg-gray-800 text-white transform translate-x-full md:translate-x-0 transition-transform z-40">
+  <nav class="p-4 space-y-2">
+    <a href="./nouns.html" class="block px-3 py-2 rounded hover:bg-gray-700">Back Now</a>
+  </nav>
+</aside>
+
+<!-- toggle button (mobile) -->
+<button onclick="document.querySelector('aside').classList.toggle('translate-x-full')"
+        class="fixed top-4 right-4 z-50 bg-gray-600 text-white px-4 py-2 rounded md:hidden">
+  Menu
+</button>
+
+       <!-- For exams image -->
+            <div class="flex justify-center items-center my-6">
+            <img src="../img/exam.jpg"
+                alt="Illustration"
+                class="w-full sm:w-5/6 md:w-2/3 h-auto max-h-80 rounded-lg shadow-md">
+            </div>
+
+            <main class="max-w-4xl mx-auto px-4 py-8">
+
+                <!-- Quiz Container -->
+                <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+                    <h2 class="text-2xl font-bold text-purple-600 mb-4">📝 Nouns and Types of Nouns Quiz</h2>
+                    <p class="text-gray-600 mb-6">Test your knowledge. Good luck!</p>
+
+                    <form id="quizForm">
+                        
+                        <!-- Question 1 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">1. What is a noun?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q1" value="a" class="w-4 h-4">
+                                    <span>a) A word that describes an action</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q1" value="b" class="w-4 h-4">
+                                    <span>b) A word that names a person, place, thing, or idea</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q1" value="c" class="w-4 h-4">
+                                    <span>c) A word that modifies a verb</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q1" value="d" class="w-4 h-4">
+                                    <span>d) A word that joins sentences</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">2. Which of the following is a proper noun?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q2" value="a" class="w-4 h-4">
+                                    <span>a) city</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q2" value="b" class="w-4 h-4">
+                                    <span>b) London</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q2" value="c" class="w-4 h-4">
+                                    <span>c) school</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q2" value="d" class="w-4 h-4">
+                                    <span>d) teacher</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">3. What type of noun is "happiness"?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q3" value="a" class="w-4 h-4">
+                                    <span>a) Concrete noun</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q3" value="b" class="w-4 h-4">
+                                    <span>b) Abstract noun</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q3" value="c" class="w-4 h-4">
+                                    <span>c) Collective noun</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q3" value="d" class="w-4 h-4">
+                                    <span>d) Proper noun</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">4. Which word is a collective noun?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q4" value="a" class="w-4 h-4">
+                                    <span>a) bird</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q4" value="b" class="w-4 h-4">
+                                    <span>b) flock</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q4" value="c" class="w-4 h-4">
+                                    <span>c) feather</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q4" value="d" class="w-4 h-4">
+                                    <span>d) sky</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">5. What is the difference between common and proper nouns?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q5" value="a" class="w-4 h-4">
+                                    <span>a) Common nouns are plural, proper nouns are singular</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q5" value="b" class="w-4 h-4">
+                                    <span>b) Common nouns are general names, proper nouns are specific names and always capitalized</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q5" value="c" class="w-4 h-4">
+                                    <span>c) Common nouns are people, proper nouns are places</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q5" value="d" class="w-4 h-4">
+                                    <span>d) There is no difference</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 6 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">6. Which of these is a concrete noun?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q6" value="a" class="w-4 h-4">
+                                    <span>a) love</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q6" value="b" class="w-4 h-4">
+                                    <span>b) freedom</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q6" value="c" class="w-4 h-4">
+                                    <span>c) table</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q6" value="d" class="w-4 h-4">
+                                    <span>d) honesty</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 7 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">7. Identify the collective noun in this sentence: "The team won the championship."</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q7" value="a" class="w-4 h-4">
+                                    <span>a) won</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q7" value="b" class="w-4 h-4">
+                                    <span>b) team</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q7" value="c" class="w-4 h-4">
+                                    <span>c) championship</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q7" value="d" class="w-4 h-4">
+                                    <span>d) the</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 8 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">8. Which sentence contains an abstract noun?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q8" value="a" class="w-4 h-4">
+                                    <span>a) The dog barked loudly.</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q8" value="b" class="w-4 h-4">
+                                    <span>b) Her kindness inspired everyone.</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q8" value="c" class="w-4 h-4">
+                                    <span>c) The book is on the shelf.</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q8" value="d" class="w-4 h-4">
+                                    <span>d) We ate pizza for dinner.</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 9 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">9. What type of noun is "Dr. Smith"?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q9" value="a" class="w-4 h-4">
+                                    <span>a) Common noun</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q9" value="b" class="w-4 h-4">
+                                    <span>b) Proper noun</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q9" value="c" class="w-4 h-4">
+                                    <span>c) Abstract noun</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q9" value="d" class="w-4 h-4">
+                                    <span>d) Collective noun</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 10 -->
+                        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-800 mb-3">10. Which of the following is NOT a collective noun?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q10" value="a" class="w-4 h-4">
+                                    <span>a) class</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q10" value="b" class="w-4 h-4">
+                                    <span>b) herd</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q10" value="c" class="w-4 h-4">
+                                    <span>c) student</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="q10" value="d" class="w-4 h-4">
+                                    <span>d) committee</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center mt-8">
+                            <button type="button" onclick="gradeQuiz()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300">
+                                Submit Quiz
+                            </button>
+                        </div>
+
+                    </form>
+
+                    <!-- Results Section -->
+                    <div id="results" class="mt-8 p-6 rounded-lg hidden"></div>
+                </div>
+
+            </main>
+
+    <script>
+        const answers = {
+            q1: 'b',
+            q2: 'b',
+            q3: 'b',
+            q4: 'b',
+            q5: 'b',
+            q6: 'c',
+            q7: 'b',
+            q8: 'b',
+            q9: 'b',
+            q10: 'c'
+        };
+
+        const explanations = {
+            q1: 'A noun is a word that names a person, place, thing, or idea. Examples include: teacher (person), school (place), book (thing), and love (idea).',
+            q2: 'London is a proper noun because it is the specific name of a city and must be capitalized. Common nouns like "city," "school," and "teacher" are general names.',
+            q3: 'Happiness is an abstract noun because it names an idea, quality, or feeling that cannot be seen or touched. Abstract nouns refer to emotions, concepts, and qualities.',
+            q4: 'Flock is a collective noun because it refers to a group of birds as a single unit. Other collective nouns include team, herd, class, and family.',
+            q5: 'Common nouns are general names for people, places, or things (e.g., city, teacher). Proper nouns are specific names and are always capitalized (e.g., London, Mr. Jones).',
+            q6: 'Table is a concrete noun because it names something physical that can be seen and touched. Abstract nouns like love, freedom, and honesty cannot be physically touched.',
+            q7: 'Team is a collective noun because it refers to a group of players acting as a single unit. Championship is a common noun, and won is a verb.',
+            q8: 'The sentence "Her kindness inspired everyone" contains the abstract noun "kindness," which names a quality that cannot be physically touched.',
+            q9: 'Dr. Smith is a proper noun because it is the specific name of a person and must be capitalized. Common nouns like "doctor" are general.',
+            q10: 'Student is NOT a collective noun; it is a common noun that refers to a single person. Class, herd, and committee are collective nouns that refer to groups.'
+        };
+
+        function gradeQuiz() {
+            let score = 0;
+            let total = Object.keys(answers).length;
+            let unanswered = [];
+            let incorrectAnswers = [];
+
+            for (let question in answers) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                if (!selected) {
+                    unanswered.push(question.replace('q', 'Question '));
+                } else if (selected.value === answers[question]) {
+                    score++;
+                } else {
+                    incorrectAnswers.push({
+                        question: question.replace('q', 'Question '),
+                        explanation: explanations[question]
+                    });
+                }
+            }
+
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.classList.remove('hidden');
+
+            const percentage = ((score / total) * 100).toFixed(1);
+            let grade = '';
+            let bgColor = '';
+
+            if (percentage >= 90) {
+                grade = 'A - Excellent!';
+                bgColor = 'bg-green-100 border-green-500';
+            } else if (percentage >= 80) {
+                grade = 'B - Very Good!';
+                bgColor = 'bg-blue-100 border-blue-500';
+            } else if (percentage >= 70) {
+                grade = 'C - Good!';
+                bgColor = 'bg-yellow-100 border-yellow-500';
+            } else if (percentage >= 60) {
+                grade = 'D - Fair';
+                bgColor = 'bg-orange-100 border-orange-500';
+            } else {
+                grade = 'F - Need More Practice';
+                bgColor = 'bg-red-100 border-red-500';
+            }
+
+            let resultHTML = `
+                <div class="${bgColor} border-l-4 p-4">
+                    <h3 class="text-2xl font-bold mb-2">Your Results</h3>
+                    <p class="text-xl mb-2">Score: ${score} out of ${total} (${percentage}%)</p>
+                    <p class="text-xl font-semibold mb-4">Grade: ${grade}</p>
+            `;
+
+            if (unanswered.length > 0) {
+                resultHTML += `
+                    <p class="mt-4 text-red-600 font-semibold">You missed ${unanswered.length} question(s):</p>
+                    <p class="text-red-600">${unanswered.join(', ')}</p>
+                `;
+            }
+
+            if (incorrectAnswers.length > 0) {
+                resultHTML += `
+                    <div class="mt-4 p-4 bg-white rounded">
+                        <p class="font-semibold text-gray-800 mb-2">Review These Topics:</p>
+                `;
+                incorrectAnswers.forEach(item => {
+                    resultHTML += `
+                        <div class="mb-3">
+                            <p class="font-semibold text-red-600">${item.question}:</p>
+                            <p class="text-gray-700 text-sm">${item.explanation}</p>
+                        </div>
+                    `;
+                });
+                resultHTML += `</div>`;
+            }
+
+            resultHTML += `
+                    <button onclick="location.reload()" class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded transition duration-300">
+                        Retake Quiz
+                    </button>
+                </div>
+            `;
+
+            resultsDiv.innerHTML = resultHTML;
+            resultsDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
